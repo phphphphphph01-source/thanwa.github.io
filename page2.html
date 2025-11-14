@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เมนู</title>
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            background-color: #fff8f3;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .item {
+            background-color: white;
+            border: 1px solid #f4a261;
+            border-radius: 10px;
+            padding: 15px;
+            width: auto;           /* คงความกว้าง */
+            height: auto;           /* ปรับความสูงอัตโนมัติ */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;       /* 🟢 ให้ขึ้นบรรทัดใหม่เมื่อเต็ม */
+            justify-content: center;
+            align-items: flex-start; /* 🟢 ให้แต่ละการ์ดอยู่ด้านบน ไม่ยืดเท่ากัน */
+            gap: 20px;
+        }
+        header, footer {
+            background-color: #f4a261; /* สีส้ม */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        section {
+            background-color: #fff8f3; /* สีเดียวกับ body */
+            padding: 20px;
+        }
+        img {
+            width: 200px;
+            border-radius: 20px;
+            height: auto;
+        }
+        .item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        a.order-btn {
+
+            background-color: #e76f51;
+            color: white;
+            text-decoration: none;         /* 🔥 เอาเส้นใต้ (ขีด) ออก */
+            border: none;
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .order-btn:hover{
+            background-color: #f4a261;
+            transform: scale(1.05);
+        }
+          @media (max-width: 480px) {
+        .item {
+            max-width: 90%;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📋หน้าเมนู📋</h1>
+    </header>
+    <section>
+    <h2>🍵เมนูเครื่องดื่ม🍵</h2>
+    <div class="menu">
+            <div class="item">
+                <img src="https://www.sgethai.com/wp-content/uploads/2023/05/AnyConv.com__85-3.webp" alt="ลาเต้" width="100px" height="100px">
+                <h3>Dreamy Latte</h3>
+                <p>ลาเต้หอมละมุนราดด้วยฟองนมเนียนนุ่ม</p>
+                <p><b>ราคา:</b> 85 บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://s359.kapook.com/pagebuilder/aa5ddfe9-01f8-43d1-a1fc-e93bb4325bc5.jpg" alt="อเมริกาโน่" width="10px" height="50px">
+                <h3>Americano</h3>
+                <p>อเมริกาโน่</p>
+                <p><b>ราคา:</b> 120 บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+
+            <div class="item">
+                <img src="https://img.kapook.com/u/2021/wanwanat/1646050783.jpg" alt="ชาเขียว" width="10px" height="100px">
+                <h3>Matcha Bliss</h3>
+                <p>ชาเขียวมัทฉะเข้มข้น หวานกำลังดี</p>
+                <p><b>ราคา:</b> 90 บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://cdn.shopify.com/s/files/1/0778/0591/2351/files/espresso_vs_americano_1024x1024.jpg?v=1725615156" alt="เอสเพรสโซ่เข้มข้น" width="10px" height="180px">
+                <h3>Espresso</h3>
+                <p>เอสเพรสโซ่เข้มข้น</p>
+                <p><b>ราคา:</b>60บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD4hCOYGzhnTmBL98g74P_zuw88H9WQJMmtQ&s" alt="คาปูชิโน่นุ่มฟอง" width="10px" height="180px">
+                <h3>Cappuccino</h3>
+                <p>คาปูชิโน่นุ่มฟอง</p>
+                <p><b>ราคา:</b>70บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://seefah.com/wp-content/uploads/2020/03/1610-Menu06-1100x733.jpg" alt="ชาดำมะนาว" width="10px" height="180px">
+                <h3>Lemon Black Tea</h3>
+                <p>ชาดำมะนาว</p>
+                <p><b>ราคา:</b>55บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://image.makewebcdn.com/makeweb/m_1920x0/9hMmtOPMp/DefaultData/%E0%B8%8A%E0%B8%B2%E0%B9%84%E0%B8%97%E0%B8%A2_%E0%B8%A3%E0%B8%AA%E0%B9%82%E0%B8%9A%E0%B8%A3%E0%B8%B2%E0%B8%932.jpg" alt="ชาไทยโบราณ" width="10px" height="180px">
+                <h3>Thai Tea</h3>
+                <p>ชาไทยโบราณ</p>
+                <p><b>ราคา:</b>65บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+        </div>
+        <hr>
+        <h2>🍰เมนูของหวาน🍰</h2>
+        <div class="menu">
+            <div class="item">
+                <img src="https://www.gourmetandcuisine.com/Images/editor_upload/_editor20230825015850_original.jpg" alt="ชีสเค้ก" width="100px" height="100px">
+                <h3>Cheesecake</h3>
+                <p>ชีสเค้ก</p>
+                <p><b>ราคา:</b> 90 บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsOcu9mkRZavjpES9BiBwoZz6UNwbTogBSGg&s" alt="บราวนี่">
+                <h3>Brownie</h3>
+                <p>บราวนี่</p>
+                <p><b>ราคา:</b>70บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://i.pinimg.com/736x/b1/c7/54/b1c754e942480c709b7a5744108e581e.jpg" alt="พายบานอฟฟี่">
+                <h3>Banoffee Pie</h3>
+                <p>พายบานอฟฟี่</p>
+                <p><b>ราคา:</b>120บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://matchazuki.com/wp-content/uploads/2016/05/matcha-cake1.jpg" alt="เค้กมัทฉะ">
+                <h3>Matcha Cake</h3>
+                <p>เค้กมัทฉะ</p>
+                <p><b>ราคา:</b>130บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://f.ptcdn.info/254/031/000/1431342917-8monitor-o.jpg" alt="ซินนามอนโรล">
+                <h3>MCinnamon Roll</h3>
+                <p>ซินนามอนโรล</p>
+                <p><b>ราคา:</b>85บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+            <div class="item">
+                <img src="https://img1.wsimg.com/isteam/ip/140a78bf-ab8c-4e2a-91fd-90bc0d538d08/IMG_6030-768x512.jpg" alt="ซิชูโรส">
+                <h3>Churros</h3>
+                <p>ชูโรส</p>
+                <p><b>ราคา:</b>85บาท</p>
+                <a href="shop.html" class="order-btn">สั่งเลย ☕</a>
+            </div>
+    </section>
+</body>
+</html>

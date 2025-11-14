@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สั่งซื้อสินค้า</title>
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            background-color: #fff8f3;
+            padding: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        .order-btn {
+            display: block;
+            text-align: center;
+            background-color: #e76f51;
+            color: white;
+            text-decoration: none; /* ❌ เอาขีดเส้นใต้ลิงก์ออก */
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 1rem;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .order-btn:hover {
+            background-color: #f4a261;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <h2 align="center">🛒 แบบฟอร์มสั่งซื้อสินค้า</h2>
+<form action="page3.html" onsubmit="return validateForm()">
+    <label>ชื่อ-นามสกุล</label>
+    <input type="text" placeholder="กรอกชื่อของคุณ" required>
+
+    <label>เมนูที่ต้องการสั่ง</label>
+    <select required>
+        <option value="">-- กรุณาเลือกเมนู --</option>
+        <option>Dreamy Latte</option>
+        <option>Chocolate Cloud Cake</option>
+        <option>Matcha Bliss</option>
+    </select>
+
+    <label>จำนวน</label>
+    <input type="number" min="1" value="1" required>
+
+    <label>เบอร์โทรศัพท์</label>
+    <input type="tel" placeholder="เช่น 0912345678" pattern="[0-9]{10}" required>
+
+    <label>หมายเหตุเพิ่มเติม</label>
+    <textarea rows="3" placeholder="ระบุความต้องการพิเศษ เช่น หวานน้อย"></textarea>
+
+    <a href="page3.html" class="order-btn">ส่งคำสั่งซื้อ ✅</a>
+</form>
+</body>
+</html>
